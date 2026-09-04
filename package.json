@@ -1,26 +1,44 @@
 {
-  "name": "op2web",
+  "name": "ordem2-playtest-research-hub",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "source:add": "tsx scripts/commands/source-add.ts",
+    "source:list": "tsx scripts/commands/source-list.ts",
+    "source:verify": "tsx scripts/commands/source-verify.ts",
+    "index": "tsx scripts/commands/index.ts",
+    "validate": "tsx scripts/commands/validate.ts",
+    "compare": "tsx scripts/commands/compare.ts"
   },
   "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "drizzle-orm": "^0.44.5",
     "next": "16.3.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "zod": "^4.1.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.20.5",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
   }
 }
