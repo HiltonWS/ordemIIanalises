@@ -1,4 +1,5 @@
 import { entities } from "@/src/lib/mock-data";
+import Link from "next/link";
 
 export default function EntitiesPage() {
   return (
@@ -7,9 +8,9 @@ export default function EntitiesPage() {
       <ul className="grid gap-2">
         {entities.map((entity) => (
           <li key={entity.id} className="rounded border border-zinc-800 bg-zinc-900 p-3">
-            <a href={`/entities/${entity.id}`} className="font-medium">
+            <Link href={`/entities/${entity.id}`} className="font-medium">
               {entity.name}
-            </a>
+            </Link>
             <p className="text-sm text-zinc-400">
               ID: {entity.id} • Type: {entity.type} • Version: {entity.version}
             </p>

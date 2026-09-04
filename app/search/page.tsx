@@ -1,4 +1,5 @@
 import { searchEntities } from "@/src/lib/search";
+import Link from "next/link";
 
 export default async function SearchPage({
   searchParams,
@@ -26,9 +27,9 @@ export default async function SearchPage({
       <ul className="grid gap-2">
         {results.map((entity) => (
           <li key={entity.id} className="rounded border border-zinc-800 bg-zinc-900 p-3">
-            <a href={`/entities/${entity.id}`} className="font-medium">
+            <Link href={`/entities/${entity.id}`} className="font-medium">
               {entity.name}
-            </a>
+            </Link>
             <p className="text-sm text-zinc-400">
               {entity.type} • {entity.version} • {entity.sourceIds.join(", ")} • {entity.contentStatus}
             </p>
