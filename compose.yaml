@@ -1,0 +1,8 @@
+services:
+  arquivo-op2:
+    build: .
+    container_name: arquivo-op2
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+

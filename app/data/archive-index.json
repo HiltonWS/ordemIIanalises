@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-05T00:00:00Z",
+  "project": {
+    "name": "Arquivo do Playtest — amostra pública",
+    "scope": "Dados demonstrativos sem texto ou anexos do playtest",
+    "activeVersion": "Amostra pública",
+    "futureReady": true
+  },
+  "stats": {
+    "records": 0,
+    "pages": 0,
+    "assets": 0,
+    "types": {},
+    "uniqueTags": 5,
+    "topTags": [
+      ["amostra pública", 5],
+      ["conteúdo original", 4],
+      ["fonte externa", 3],
+      ["ficha", 3],
+      ["versionamento", 2]
+    ]
+  },
+  "versions": [
+    {
+      "id": "public-demo",
+      "label": "Amostra pública",
+      "date": "Setembro de 2026",
+      "status": "sanitizada",
+      "pages": 0,
+      "assets": 0,
+      "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "records": [],
+  "mechanics": [
+    {
+      "id": "m-private-placeholder",
+      "title": "Mecânicas oficiais omitidas",
+      "pages": [],
+      "summary": "A base pública preserva o formato do índice, mas não inclui texto nem reconstruções do material de playtest.",
+      "tags": ["amostra pública", "privacidade"],
+      "links": []
+    }
+  ],
+  "pointsOfInterest": [
+    {
+      "id": "poi-private-placeholder",
+      "title": "Pontos oficiais omitidos",
+      "acts": ["Amostra pública"],
+      "pages": [],
+      "role": "Os pontos do cenário permanecem apenas na base privada.",
+      "tools": [],
+      "links": ["m-private-placeholder"],
+      "tags": ["amostra pública", "privacidade"]
+    }
+  ],
+  "originalPoints": [
+    {
+      "id": "homebrew-cabine-17",
+      "title": "Cabine 17 — eco de passageiros",
+      "pitch": "Uma cabine lacrada de trem repete conversas de viagens que nunca ocorreram.",
+      "baseClue": "Bilhetes com horários incompatíveis aparecem sob o banco.",
+      "skillLayer": "Examinar cruza furos de perfuração e descobre três origens diferentes.",
+      "toolLayer": "O rádio modificado separa as vozes por direção; o termômetro marca um assento vazio.",
+      "deduction": "A entidade não imita pessoas, mas trajetos interrompidos.",
+      "risk": "Cada reprodução completa apaga uma lembrança curta e custa 1 PD.",
+      "links": [],
+      "tags": ["homebrew original", "áudio", "memória", "transporte"]
+    }
+  ],
+  "sheetConcepts": [
+    {
+      "id": "sheet-lia",
+      "name": "Lia Nascimento",
+      "profile": "Vigilante",
+      "occupation": "Operadora de áudio",
+      "level": 3,
+      "accent": "#ffb000",
+      "concept": "Especialista em presença, movimento e gravações de campo.",
+      "focus": ["Percepção", "Reflexos", "Tecnologia"],
+      "signature": "Rebobinar ambiente: uma vez por cena, transforma um ruído já registrado em pergunta investigativa.",
+      "sheetIdea": "Faixa de tempo para pistas, marcador de posição segura/arriscada e três slots de gravação.",
+      "tags": ["homebrew original", "vigilante", "áudio"]
+    },
+    {
+      "id": "sheet-mauro",
+      "name": "Mauro Vidal",
+      "profile": "Executor",
+      "occupation": "Socorrista",
+      "level": 3,
+      "accent": "#ff6048",
+      "concept": "Resolve bloqueios físicos sem abandonar a leitura cuidadosa da cena.",
+      "focus": ["Atletismo", "Fortitude", "Medicina"],
+      "signature": "Ponto de apoio: ao Sustentar, cria uma janela segura curta para outro agente agir.",
+      "sheetIdea": "PV e custos físicos no centro; borda destacável para ferimentos e decisões de acesso.",
+      "tags": ["homebrew original", "executor", "resgate"]
+    },
+    {
+      "id": "sheet-noemi",
+      "name": "Noemi Prado",
+      "profile": "Analista",
+      "occupation": "Arquivista",
+      "level": 3,
+      "accent": "#63d6d1",
+      "concept": "Conecta documentos, versões contraditórias e vestígios catalogados.",
+      "focus": ["Pesquisar", "Intuição", "Ocultismo"],
+      "signature": "Proveniência cruzada: ao Recapitular, marca uma contradição e indica qual pista pode resolvê-la.",
+      "sheetIdea": "Mini-grafo de evidências, trilha de hipóteses e selo de proveniência oficial/inferida.",
+      "tags": ["homebrew original", "analista", "arquivo"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-fabula-ultima",
+      "title": "Fabula Ultima",
+      "publisher": "Need Games",
+      "url": "https://need.games/fabula-ultima/",
+      "relation": "Referência explicitamente citada no playtest e catalogada por sua composição modular.",
+      "evidence": "citação explícita no playtest",
+      "availability": "acessórios oficiais gratuitos catalogados; arquivos não incluídos no GitHub",
+      "downloaded": false,
+      "tags": ["inspiração", "rpg", "fonte externa"]
+    },
+    {
+      "id": "src-delta-green",
+      "title": "Delta Green: Need to Know",
+      "publisher": "Arc Dream Publishing",
+      "url": "https://arcdream.com/home/2016/02/download-delta-green-need-to-know/",
+      "relation": "Referência explicitamente citada e catalogada como quickstart de investigação.",
+      "evidence": "citação explícita no playtest",
+      "availability": "PDF a US$ 0,00 com carrinho/login no DriveThruRPG",
+      "downloaded": false,
+      "tags": ["inspiração", "rpg", "fonte externa"]
+    },
+    {
+      "id": "src-licenca",
+      "title": "Licença Comunitária Ordem Paranormal",
+      "publisher": "Ordem Paranormal / Jambô",
+      "url": "https://ordemparanormal.com.br/licenca",
+      "relation": "Fonte normativa usada para manter a publicação pública separada do arquivo privado.",
+      "evidence": "fonte normativa oficial",
+      "availability": "texto oficial online",
+      "downloaded": false,
+      "tags": ["licença", "fonte oficial", "fonte externa"]
+    }
+  ],
+  "findings": [
+    {
+      "id": "finding-public-sample",
+      "severity": "info",
+      "title": "Amostra sanitizada",
+      "pages": [],
+      "note": "O repositório público demonstra a estrutura sem reproduzir o texto ou os anexos do playtest.",
+      "tags": ["amostra pública", "privacidade"]
+    }
+  ],
+  "taxonomy": [
+    {"group": "proveniência", "values": ["oficial", "extra oficial", "inferência", "homebrew original", "fonte externa"]},
+    {"group": "escopo", "values": ["sistema", "ato i", "ato ii", "fichas", "ferramentas"]},
+    {"group": "objeto", "values": ["página", "ficha", "histórico", "handout", "mapa", "áudio", "token", "fonte"]},
+    {"group": "confiança", "values": ["texto extraído", "metadado verificado", "relação curada", "possível errata"]}
+  ],
+  "comparisonConfig": {
+    "identity": ["kind", "normalizedTitle", "act", "pageAnchor"],
+    "compare": ["contentHash", "tags", "page", "metadata", "links"],
+    "states": ["adicionado", "removido", "alterado", "movido", "renomeado", "inalterado"],
+    "notes": "Uma nova versão é importada como conjunto imutável. O comparador primeiro usa id estável e depois similaridade de título e contexto para sugerir renomeações e movimentos."
+  }
+}
